@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Árvore de preços por UF e canal de vendas em visual premium.">
+    <title>Árvore de Preços Premium</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="app" aria-live="polite">
+      <header class="app-header">
+        <div class="title-group">
+          <span class="uf-chip" id="uf-chip">UF</span>
+          <div>
+            <p class="eyebrow">Consulta comercial</p>
+            <h1>ÁRVORE DE PREÇOS</h1>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <span class="status-indicator"><span class="status-dot"></span> Dados atualizados</span>
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Alternar tema">◐</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="toolbar" aria-label="Ferramentas">
+          <label class="field">
+            <span>UF</span>
+            <select id="uf-filter" aria-label="Selecionar UF"></select>
+          </label>
+
+          <label class="field search-field">
+            <span>Produto</span>
+            <input id="search" type="search" placeholder="Nome, nome abreviado ou Promax" autocomplete="off">
+          </label>
+
+          <button id="refresh" class="button" type="button">Atualizar</button>
+        </section>
+
+        <section id="status" class="status" hidden></section>
+        <section id="tree" class="tree" aria-label="Árvore de preços"></section>
+        <section id="results" class="results" hidden></section>
+      </main>
+    </div>
+
+    <template id="package-template">
+      <section class="package">
+        <div class="package-title">
+          <span class="package-name"></span>
+          <span class="package-count"></span>
+        </div>
+        <div class="matrix"></div>
+        <div class="mobile-products"></div>
+      </section>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+pandas
+openpyxl
+streamlit
+Pillow
+playwright>=1.55,<2
+pypdf>=5.0
+pyxlsb>=1.0
