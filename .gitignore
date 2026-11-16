@@ -1,0 +1,45 @@
+# =========================
+# DADOS SIGILOSOS
+# =========================
+
+data/**/*.xlsx
+data/**/*.xls
+data/**/*.xlsm
+data/**/*.xlsb
+data/**/*.csv
+
+cadastro/*.xlsx
+cadastro/*.xls
+cadastro/*.xlsm
+cadastro/*.xlsb
+cadastro/*.csv
+
+
+# =========================
+# PYTHON
+# =========================
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+.venv/
+venv/
+env/
+
+
+# =========================
+# STREAMLIT
+# =========================
+
+.streamlit/secrets.toml
+
+
+# =========================
+# SISTEMA / TEMPORÁRIOS
+# =========================
+
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
